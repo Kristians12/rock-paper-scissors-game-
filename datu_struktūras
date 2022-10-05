@@ -1,0 +1,31 @@
+name= "Anna" #string
+age= 17 #integer
+height= 1.68 #float
+has_laptop = True #boolen
+
+names = ['Anna', 'Oskars', 'Jenifer', 'Anna', 'Miks']
+ages = [17, 18, 18, 15, 20]
+    
+#Anna is 17 years old
+#Oskars is 18 years old
+#Jenifer is 18 years old
+#Anna is 15 years old
+
+
+for number in range(len(names)):
+    print(f'Čau! {names[number]} is {ages[number]} years old.')
+
+#UZDEVUMS 1: izveido kodu kas izvadīs:
+#Anna has 4 letters in the name
+#Arturs has 6 letters in the name
+#...
+
+print('======================================\nTe būs kods ar indeksiem')
+print('======================================')
+for i in range(len(names)):
+    print(f'{names[i]} has {len(names[i])} letters in the name.')
+
+print('======================================\nBet, šis kods izmanto vienu mainīgo')
+print('======================================')
+for name in names:
+    print(f'{name} has {len(name)} letters in the name.')
